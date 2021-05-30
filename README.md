@@ -50,4 +50,4 @@ Install some common [Homebrew](https://brew.sh/) formulae (after installing Home
 ```
 
 ## Thanks to…
-[Mathias Bynens](https://mathiasbynens.be/) and his [dotfiles repo](https://github.com/mathiasbynens/dotfiles)
+[Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
