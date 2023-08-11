@@ -1,3 +1,6 @@
+[include]
+    path = ~/.gitconfig.local
+
 [alias]
 
 	# View abbreviated SHA, description, and history graph

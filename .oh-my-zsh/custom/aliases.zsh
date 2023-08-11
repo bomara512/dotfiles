@@ -4,11 +4,6 @@
 alias ..="cd .."
 alias ...="cd ../.."
 
-# Shortcuts
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
-
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
@@ -20,7 +15,7 @@ fi
 
 # List all files colorized in long format
 alias l="ls -lF ${colorflag}"
-alias ll="ls -lAF ${colorflag}"
+alias ll="ls -al ${colorflag}"
 
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
