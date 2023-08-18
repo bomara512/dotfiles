@@ -15,23 +15,7 @@ if test ! $(which brew); then
   eval "$(/usr/local/bin/brew shellenv)"
 fi
 
-## TODO: use stow or at least make backups
-
-## Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-rm -rf $HOME/.zshrc
-ln -s $HOME/dotfiles/.zshrc $HOME/.zshrc
-
-rm -rf $HOME/.gitconfig
-ln -s $HOME/dotfiles/.gitconfig $HOME/.gitconfig
-
-rm -rf $HOME/.oh-my-zsh/custom/aliases.zsh
-ln -s $HOME/dotfiles/.oh-my-zsh/custom/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
-
-rm -rf $HOME/.hushlogin
-ln -s $HOME/dotfiles/.hushlogin $HOME/.hushlogin
-
-rm -rf $HOME/.p10k.zsh
-ln -s $HOME/dotfiles/.p10k.zsh $HOME/.p10k.zsh
+stow --verbose --target=$HOME --restow git p10k shell zsh
 
 # Update Homebrew recipes
 brew update
