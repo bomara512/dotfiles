@@ -15,8 +15,6 @@ if test ! $(which brew); then
   eval "$(/usr/local/bin/brew shellenv)"
 fi
 
-stow --verbose --target=$HOME --restow git p10k shell zsh
-
 # Update Homebrew recipes
 brew update
 
@@ -29,6 +27,8 @@ brew bundle --file ./Brewfile
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+stow --verbose --target=$HOME --restow git p10k shell zsh
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos
