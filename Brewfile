@@ -2,7 +2,6 @@
 tap 'homebrew/cask'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
-tap 'romkatv/powerlevel10k'
 
 # Binaries
 brew 'coreutils'
@@ -19,7 +18,6 @@ brew 'stow'
 brew 'zsh-syntax-highlighting'
 brew 'zsh-autocomplete'
 brew 'zsh-autosuggestions'
-brew 'powerlevel10k'
 
 # Apps
 cask 'iterm2'
