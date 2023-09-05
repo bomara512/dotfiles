@@ -36,5 +36,8 @@ brew cleanup
 
 stow --verbose --target=$HOME --restow git p10k shell zsh
 
+pyenv install 3.11
+pyenv global 3.11
+
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos
