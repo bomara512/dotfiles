@@ -2,10 +2,10 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "141e6139a2a6517f18a79b82aa455b2ca610fba0"
+        "revision": "b6ab9f6e879262dda3c727563910b4053c3ce30d"
       },
       "homebrew/cask-versions": {
-        "revision": "40580507b6e8b205dcfde824cc6333a6049be2c3"
+        "revision": "0e9fa9467a2797bea9999331f5cd7a06e60bf833"
       },
       "homebrew/bundle": {
         "revision": "73fe1415f01bc26ce4df0c4f52099ab1a0ef5b9d"
@@ -871,7 +871,7 @@
         }
       },
       "pycharm": {
-        "version": "2023.2.3,232.10072.31",
+        "version": "2023.2.4,232.10203.26",
         "options": {
           "full_name": "pycharm"
         }
@@ -913,7 +913,7 @@
         }
       },
       "slack": {
-        "version": "4.35.121",
+        "version": "4.35.126",
         "options": {
           "full_name": "slack"
         }
@@ -947,6 +947,14 @@
         "CLT": "14.3.1.0.1.1683849156",
         "Xcode": "14.3",
         "macOS": "13.5.1"
+      },
+      "sonoma": {
+        "HOMEBREW_VERSION": "4.1.19",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "15.0.0.0.1.1694021235",
+        "Xcode": "15.0",
+        "macOS": "14.0"
       }
     }
   }
