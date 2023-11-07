@@ -15,13 +15,19 @@ fi
 
 . ./brew.sh
 
-stow --verbose --target=$HOME --restow git p10k shell zsh
+ZSHRC_FILE="$HOME/.zshrc"
+if [ -f "$ZSHRC_FILE" ] && ! [ -L "$ZSHRC_FILE" ] ; then
+  ZSHRC_FILE_BAK="$ZSHRC_FILE.$(date -Iseconds)";
+  echo "Creating backup before stow: $ZSHRC_FILE_BAK";
+  mv "$ZSHRC_FILE" "$ZSHRC_FILE_BAK"
+fi
+
+stow --verbose --target="$HOME" --restow git p10k shell zsh
 
 PYTHON_VERSION="3.11";
 echo "PYTHON_VERSION = $PYTHON_VERSION";
 
-# shellcheck disable=SC2039
-if [[ $(pyenv global) != "$PYTHON_VERSION" ]]; then
+if [ "$(pyenv global)" != "$PYTHON_VERSION" ]; then
   echo "installing global python: $PYTHON_VERSION...";
   pyenv install $PYTHON_VERSION;
   pyenv global $PYTHON_VERSION;
