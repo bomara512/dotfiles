@@ -45,7 +45,7 @@ source brew.sh
 or 
 
 ```bash
-./.macos
+source .macos
 ```
 
 to update the respective configurations independently.
