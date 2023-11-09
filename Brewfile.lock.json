@@ -2,10 +2,10 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "1013a90a685f6b9811ad5da90aeedf49c0ff7116"
+        "revision": "f5252c23360bcdc5a5c59db6fea329dbdf3e25de"
       },
       "homebrew/cask-versions": {
-        "revision": "3a703bc9ce09a2087f2f1db3dc2f746de7be0226"
+        "revision": "d7b9a5f20ea0bf73eab447c06d8a3c9fa5d3d9c2"
       },
       "homebrew/bundle": {
         "revision": "73fe1415f01bc26ce4df0c4f52099ab1a0ef5b9d"
@@ -907,7 +907,7 @@
         }
       },
       "google-chrome": {
-        "version": "119.0.6045.105",
+        "version": "119.0.6045.123",
         "options": {
           "full_name": "google-chrome"
         }

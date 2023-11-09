@@ -1,53 +1,57 @@
 # dotfiles
 
-Collection of dotfiles to set up my mac the way I want.
-
-See https://dotfiles.github.io and [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles) for more general purpose dotfile management ideas.
+Collection of dotfiles to help me remember how to set up a mac the way I want. 
+Works pretty well on a fresh macos installation. 
+Might need some tweaks if trying to introduce to an existing installation.
+Heavily inspired by [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles) to begin with then simplified to my specific needs.
 
 ## Installation
 
-Clone the repo. For initial installation and subsequent updates, `cd` into local `dotfiles` repository and then:
+Clone the repo into the `$HOME` directory. For initial installation and subsequent updates, `cd` into local `dotfiles` repository and then:
 
 ```bash
-source bootstrap.sh
+source install.sh
 ```
 
-This will update the local repo and then copy the dotfiles to `$HOME`.
+This is a pretty short and self-explanatory script which will
+- install [oh my zsh](https://ohmyz.sh/) and [Powerlevel10k](https://github.com/romkatv/powerlevel10k/blob/master/README.md)
+- install [Homebrew](https://brew.sh/) and formulae specified in the `Brewfile`
+- install a specific global python version via [pyenv](https://github.com/pyenv/pyenvhttps://github.com/pyenv/pyenv)
+- create symlinks to various source controlled dotfiles using [stow](https://www.gnu.org/software/stow/) [[brief how-to](https://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html)]
+- set some sensible macOS defaults 
 
-### Optional ~/.path file
+### Local git customizations
 
-If `~/.path` exists, it will be sourced along with the other files.
+If `~/.gitconfig.local` exists, it will be sourced by the `git/.gitconfig` file. 
+This is a good place to put git configurations that you might not want to check into source control.
 
-Example `~/.path` contents:
+Example `~/.gitconfig.local` contents:
 ```bash
-export PATH="/usr/local/bin:$PATH"
+[user]
+        name = My Name
+        email = myemail@example.com
 ```
 
-### Optional ~/.extra file
+### Subsequent runs
 
-If `~/.extra` exists, it will be sourced along with the other files. Good for adding commands you don’t want to commit to a public repository.
+The `install.sh` command can be rerun periodically to apply changes or pick up brew updates.
 
-Example `~/.extra` contents:
+You should also be able to run 
+
 ```bash
-git config --global user.name "$GIT_AUTHOR_NAME"
-git config --global user.email "$GIT_AUTHOR_EMAIL"
+source brew.sh
 ```
 
-### Sensible macOS defaults
-
-Set some sensible macOS defaults:
+or 
 
 ```bash
 ./.macos
 ```
 
-### Homebrew formulae
-
-Install some common [Homebrew](https://brew.sh/) formulae (after installing Homebrew, of course):
-
-```bash
-./brew.sh
-```
+to update the respective configurations independently.
 
 ## Thanks to…
-[Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
+https://dotfiles.github.io and especially [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles)
+
+
+
