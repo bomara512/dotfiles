@@ -35,5 +35,9 @@ else
   echo "global python is already at $PYTHON_VERSION";
 fi
 
+if test ! "$(which nvm)"; then
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+fi
+
 # Set macOS preferences - we will run this last because this will reload the shell
 . ./.macos
