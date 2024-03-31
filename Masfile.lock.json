@@ -1,0 +1,35 @@
+{
+  "entries": {
+    "mas": {
+      "Keynote": {
+        "id": "409183694",
+        "version": "13.2"
+      },
+      "Numbers": {
+        "id": "409203825",
+        "version": "13.2"
+      },
+      "Speedtest": {
+        "id": "1153157709",
+        "version": "1.27"
+      },
+      "Things": {
+        "id": "904280696",
+        "version": "3.20.3"
+      },
+      "Microsoft Word": null
+    }
+  },
+  "system": {
+    "macos": {
+      "sonoma": {
+        "HOMEBREW_VERSION": "4.2.15",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "15.3.0.0.1.1708646388",
+        "Xcode": "15.1",
+        "macOS": "14.4.1"
+      }
+    }
+  }
+}

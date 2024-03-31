@@ -2,10 +2,10 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "f5252c23360bcdc5a5c59db6fea329dbdf3e25de"
+        "revision": "136939774094fcbbc12366571dde98ed88f6d54f"
       },
       "homebrew/cask-versions": {
-        "revision": "d7b9a5f20ea0bf73eab447c06d8a3c9fa5d3d9c2"
+        "revision": "fdba527568731831035f521f9f66fba00c2a686f"
       },
       "homebrew/bundle": {
         "revision": "73fe1415f01bc26ce4df0c4f52099ab1a0ef5b9d"
@@ -877,7 +877,7 @@
         }
       },
       "intellij-idea": {
-        "version": "2023.2.4,232.10203.10",
+        "version": "2023.2.5,232.10227.8",
         "options": {
           "full_name": "intellij-idea"
         }

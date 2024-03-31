@@ -37,9 +37,3 @@ cask 'slack'
 cask 'zoom'
 cask 'spotify'
 cask 'steam'
-
-# Mac App Store
-#mas 'Keynote', id: 409183694
-#mas 'Numbers', id: 409203825
-#mas 'Speedtest', id: 1153157709
-#mas 'Things', id: 904280696
