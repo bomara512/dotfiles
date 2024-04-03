@@ -3,11 +3,11 @@
     "mas": {
       "Keynote": {
         "id": "409183694",
-        "version": "13.2"
+        "version": "14.0"
       },
       "Numbers": {
         "id": "409203825",
-        "version": "13.2"
+        "version": "14.0"
       },
       "Speedtest": {
         "id": "1153157709",
@@ -17,13 +17,41 @@
         "id": "904280696",
         "version": "3.20.3"
       },
-      "Microsoft Word": null
+      "Microsoft Word": {
+        "id": "462054704",
+        "version": "16.83"
+      },
+      "Pixelmator Pro": {
+        "id": "1289583905",
+        "version": "3.5.7"
+      },
+      "PCalc": {
+        "id": "403504866",
+        "version": "4.10.8"
+      },
+      "Drafts": {
+        "id": "1435957248",
+        "version": "43.0"
+      },
+      "Microsoft Excel": {
+        "id": "462058435",
+        "version": "16.83"
+      },
+      "Microsoft OneNote": {
+        "id": "784801555",
+        "version": "16.83"
+      },
+      "Microsoft OneDrive": null,
+      "DaisyDisk": {
+        "id": "411643860",
+        "version": "4.30"
+      }
     }
   },
   "system": {
     "macos": {
       "sonoma": {
-        "HOMEBREW_VERSION": "4.2.15",
+        "HOMEBREW_VERSION": "4.2.16",
         "HOMEBREW_PREFIX": "/usr/local",
         "Homebrew/homebrew-core": "api",
         "CLT": "15.3.0.0.1.1708646388",
