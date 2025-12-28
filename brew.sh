@@ -17,7 +17,6 @@ brew update
 brew upgrade
 
 # Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
 brew bundle --file ./Brewfile
 
 # Remove outdated versions from the cellar.

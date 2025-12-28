@@ -24,7 +24,7 @@ fi
 
 stow --verbose --target="$HOME" --restow git p10k shell zsh
 
-PYTHON_VERSION="3.11";
+PYTHON_VERSION="3.14";
 echo "PYTHON_VERSION = $PYTHON_VERSION";
 
 if [ "$(pyenv global)" != "$PYTHON_VERSION" ]; then
@@ -36,7 +36,7 @@ else
 fi
 
 if test ! "$(which nvm)"; then
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 fi
 
 # Set macOS preferences - we will run this last because this will reload the shell

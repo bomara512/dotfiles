@@ -1,7 +1,4 @@
 # Taps
-tap 'homebrew/cask'
-tap 'homebrew/cask-versions'
-tap 'homebrew/bundle'
 
 # Binaries
 brew 'coreutils'
@@ -30,10 +27,8 @@ cask 'pycharm'
 cask 'intellij-idea'
 cask 'alfred'
 cask '1password'
-cask 'docker'
+cask 'docker-desktop'
 cask 'firefox'
 cask 'google-chrome'
-cask 'slack'
-cask 'zoom'
 cask 'spotify'
 cask 'steam'
