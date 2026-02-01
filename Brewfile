@@ -21,8 +21,6 @@ brew 'zsh-autosuggestions'
 
 # Apps
 cask 'iterm2'
-cask 'flycut'
-cask 'rectangle'
 cask 'pycharm'
 cask 'intellij-idea'
 cask 'alfred'
