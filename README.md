@@ -50,6 +50,12 @@ source .macos
 
 to update the respective configurations independently.
 
+## Manual steps
+Config to do by hand til I find a way to automate
+
+* Swap spotlight and Alfred hotkey combos
+* Prefs > Energy > Prevent automatic sleeping when display is off
+
 ## Thanks to…
 https://dotfiles.github.io and especially [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles)
 
