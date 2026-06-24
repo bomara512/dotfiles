@@ -55,7 +55,8 @@ Config to do by hand til I find a way to automate
 
 * Swap spotlight and Alfred hotkey combos
 * Prefs > Energy > Prevent automatic sleeping when display is off
-
+* link brew-installed java
+  * sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 ## Thanks to…
 https://dotfiles.github.io and especially [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles)
 

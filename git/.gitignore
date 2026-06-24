@@ -421,3 +421,5 @@ gradle-app.setting
 
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij+all,pycharm+iml,python,macos,gradle,maven
 
+# AI
+**/.claude/settings.local.json

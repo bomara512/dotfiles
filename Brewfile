@@ -18,6 +18,7 @@ brew 'stow'
 brew 'zsh-syntax-highlighting'
 brew 'zsh-autocomplete'
 brew 'zsh-autosuggestions'
+brew 'openjdk@25'
 
 # Apps
 cask 'iterm2'

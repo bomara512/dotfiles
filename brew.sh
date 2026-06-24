@@ -6,8 +6,15 @@ echo "Homebrew..."
 if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-  echo 'eval "$(/usr/local/bin/brew shellenv)"' >> $HOME/.zprofile
-  eval "$(/usr/local/bin/brew shellenv)"
+  # Determine install location: Apple Silicon vs Intel
+  if [ -f /opt/homebrew/bin/brew ]; then
+    BREW_BIN=/opt/homebrew/bin/brew
+  else
+    BREW_BIN=/usr/local/bin/brew
+  fi
+
+  echo "eval \"\$(${BREW_BIN} shellenv)\"" >> $HOME/.zprofile
+  eval "$($BREW_BIN shellenv)"
 fi
 
 # Update Homebrew recipes
